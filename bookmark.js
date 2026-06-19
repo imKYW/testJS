@@ -1,5 +1,5 @@
 javascript: (() => {
-	fetch("https://raw.githubusercontent.com/yeorinhieut/novel-dl/main/script.js")
+	fetch("https://raw.githubusercontent.com/imKYW/testJS/main/script.js")
 		.then((response) => {
 			if (!response.ok) {
 				throw new Error(`Failed to fetch script: ${response.statusText}`);

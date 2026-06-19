@@ -569,7 +569,7 @@ async function downloadNovel(
 
 	// 문제 보고 링크 추가
 	const issueLink = document.createElement("a");
-	issueLink.href = "https://github.com/yeorinhieut/novel-dl/issues";
+	issueLink.href = "https://github.com/imKYW/testJS/issues";
 	issueLink.textContent = "오류 제보하기";
 	issueLink.target = "_blank"; // 새 탭에서 열기
 	Object.assign(issueLink.style, {
@@ -634,7 +634,7 @@ async function downloadNovel(
 
 		// 진행 추적기 초기화
 		const progressTracker = createProgressTracker(totalEpisodes);
-		let novelText = `${title}\n\nnovel-dl로 다운로드됨,\nhttps://github.com/yeorinhieut/novel-dl\n\n`;
+		let novelText = `${title}\n\nnovel-dl로 다운로드됨,\nhttps://github.com/imKYW/testJS\n\n`;
 		let completedEpisodes = 0;
 		let failedEpisodes = 0;
 		let captchaCount = 0;
@@ -644,9 +644,9 @@ async function downloadNovel(
 		for (let i = startingIndex; i >= endingIndex; i--) {
 			const episodeUrl = episodeLinks[i];
 			console.log(`[downloadNovel] ${i}번째 에피소드 URL:`, episodeUrl);
-			if (!episodeUrl.startsWith("https://booktoki")) {
+			if (!episodeUrl.startsWith("https://bookto")) {
 				failedEpisodes++;
-				console.log(`[downloadNovel] booktoki URL 아님, 건너뜀: ${episodeUrl}`);
+				console.log(`[downloadNovel] bookto URL 아님, 건너뜀: ${episodeUrl}`);
 				continue;
 			}
 
@@ -887,7 +887,7 @@ async function downloadNovel(
 
 			// 문제 보고 링크 추가
 			const issueLink = document.createElement("a");
-			issueLink.href = "https://github.com/yeorinhieut/novel-dl/issues";
+			issueLink.href = "https://github.com/imKYW/testJS/issues";
 			issueLink.textContent = "오류 제보하기";
 			issueLink.target = "_blank"; // 새 탭에서 열기
 			Object.assign(issueLink.style, {
@@ -960,7 +960,7 @@ function showChromeNotification(title, message) {
 	if (Notification.permission === "granted") {
 		const notification = new Notification(title, {
 			body: message,
-			icon: "https://raw.githubusercontent.com/yeorinhieut/novel-dl/main/icon.png"
+			icon: "https://raw.githubusercontent.com/imKYW/testJS/main/icon.png"
 		});
 		
 		// 5초 후 자동 종료
@@ -971,7 +971,7 @@ function showChromeNotification(title, message) {
 			if (permission === "granted") {
 				const notification = new Notification(title, {
 					body: message,
-					icon: "https://raw.githubusercontent.com/yeorinhieut/novel-dl/main/icon.png"
+					icon: "https://raw.githubusercontent.com/imKYW/testJS/main/icon.png"
 				});
 				
 				// 5초 후 자동 종료
@@ -1018,7 +1018,7 @@ async function fetchPage(url) {
 
 async function runCrawler() {
 	console.log("[runCrawler] 시작");
-	const novelPageRule = "https://booktoki";
+	const novelPageRule = "https://bookto";
 	let currentUrl = window.location.href;
 
 	// URL 정리
@@ -1578,7 +1578,7 @@ async function runCrawler() {
 
 		// 문제 보고 링크 추가
 		const issueLink = document.createElement("a");
-		issueLink.href = "https://github.com/yeorinhieut/novel-dl/issues";
+		issueLink.href = "https://github.com/imKYW/testJS/issues";
 		issueLink.textContent = "오류 제보하기";
 		issueLink.target = "_blank"; // 새 탭에서 열기
 		Object.assign(issueLink.style, {
